@@ -16,7 +16,7 @@ function BookDetail() {
 
   return (
     <section>
-      <Link to="/books">This lab disrespected me. Take me home!</Link>
+      <Link to="/books">Back to BooksList</Link>
       <Book book={book} showDetail />
     </section>
   )
