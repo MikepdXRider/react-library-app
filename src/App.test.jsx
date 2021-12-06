@@ -1,15 +1,9 @@
-import { render, screen } from '@testing-library/react'
-import { MemoryRouter } from 'react-router-dom'
+/* eslint-disable no-undef */
+import { screen, render } from '@testing-library/react'
 import App from './App'
 
-it('renders a welcome message when signed out', async () => {
-  const { container } = render(
-    <MemoryRouter>
-      <App />
-    </MemoryRouter>
-  )
-
-  await screen.findByRole('list', { name: 'book list' })
+it('renders home page', () => {
+  const { container } = render(App)
 
   expect(container).toMatchSnapshot()
 })
